@@ -50,10 +50,10 @@ target_sources(app PRIVATE ${UBXLIB_BASE}/common/ubx_protocol/src/u_ubx_protocol
 target_sources(app PRIVATE ${UBXLIB_BASE}/common/ubx_protocol/test/u_ubx_protocol_test.c)
 
 #lib-common
-target_include_directories(app PRIVATE ${UBXLIB_BASE}/common/lib_common/api ${UBXLIB_BASE}/common/lib_common/test)
-target_sources(app PRIVATE ${UBXLIB_BASE}/common/lib_common/src/u_lib_handler.c)
-include(./lib_common_test.cmake)
-target_sources(app PRIVATE ${UBXLIB_BASE}/common/lib_common/test/u_lib_common_test.c)
+#target_include_directories(app PRIVATE ${UBXLIB_BASE}/common/lib_common/api ${UBXLIB_BASE}/common/lib_common/test)
+#target_sources(app PRIVATE ${UBXLIB_BASE}/common/lib_common/src/u_lib_handler.c)
+#include(./lib_common_test.cmake)
+#target_sources(app PRIVATE ${UBXLIB_BASE}/common/lib_common/test/u_lib_common_test.c)
 
 #network
 target_include_directories(app PRIVATE ${UBXLIB_BASE}/common/network/api ${UBXLIB_BASE}/common/network/src  ${UBXLIB_BASE}/common/network/test)

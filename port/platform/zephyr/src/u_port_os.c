@@ -47,11 +47,9 @@
 #ifndef U_PORT_STACK_GUARD_SIZE
 #define U_PORT_STACK_GUARD_SIZE 50
 #endif
-static uint8_t __aligned(U_CFG_OS_EXECUTABLE_CHUNK_INDEX_0_SIZE)
-exe_chunk_0[U_CFG_OS_EXECUTABLE_CHUNK_INDEX_0_SIZE];
+static uint8_t __aligned(U_CFG_OS_EXECUTABLE_CHUNK_INDEX_0_SIZE)exe_chunk_0[U_CFG_OS_EXECUTABLE_CHUNK_INDEX_0_SIZE];
 // make this ram part executable
-K_MEM_PARTITION_DEFINE(chunk0_reloc, exe_chunk_0, sizeof(exe_chunk_0),
-                       K_MEM_PARTITION_P_RWX_U_RWX);
+K_MEM_PARTITION_DEFINE(chunk0_reloc, exe_chunk_0, sizeof(exe_chunk_0), K_MEM_PARTITION_P_RWX_U_RWX);
 
 /* ----------------------------------------------------------------
  * TYPES

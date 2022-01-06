@@ -124,7 +124,15 @@
 #include "u_cfg_test_platform_specific_nrf5340pdk_nrf5340.h"
 #endif
 
-#ifdef CONFIG_BOARD_NRF5340DK_NRF5340_CPUAPP
+#ifdef CONFIG_BOARD_NRF5340DK_NRF5340_CPUAPPNS
+#include "u_cfg_test_platform_specific_nrf5340dk_nrf5340.h"
+#endif
+
+#ifdef CONFIG_BOARD_NRF5340DK_NRF5340_CPUAPP_NS
+#include "u_cfg_test_platform_specific_nrf5340dk_nrf5340.h"
+#endif
+
+#ifdef CONFIG_BOARD_NOVA2_CPUAPP_NS
 #include "u_cfg_test_platform_specific_nrf5340dk_nrf5340.h"
 #endif
 
