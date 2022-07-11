@@ -1,9 +1,9 @@
 config UBXLIB
         bool "u-blox ubxlib support"
         default n
-        select MBEDTLS
-        select MBEDTLS_MAC_SHA256_ENABLED
-        select MBEDTLS_CIPHER_AES_ENABLED
+        #select MBEDTLS
+        #select MBEDTLS_MAC_SHA256_ENABLED
+        #select MBEDTLS_CIPHER_AES_ENABLED
 
         help
           Enable ubxlib for use with u-blox modules
